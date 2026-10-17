@@ -1,0 +1,8 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>CookCents · autorização</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 16px;color:#030712}
+code{display:block;word-break:break-all;background:#EAF6EC;padding:16px;border-radius:12px;font-size:15px}</style></head>
+<body><h2>Autorização recebida</h2><p>Copie o código abaixo e cole no terminal do Ubuntu:</p><code id="c">—</code>
+<script>const p=new URLSearchParams(location.search);document.getElementById('c').textContent=
+(p.get('code')||p.get('error_description')||p.get('error')||'Nenhum código na URL').replace(/#_$/,'');</script>
+</body></html>
